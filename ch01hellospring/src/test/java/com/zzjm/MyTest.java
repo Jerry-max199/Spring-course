@@ -1,5 +1,6 @@
 package com.zzjm;
 
+import com.zzjm.ba01.Student;
 import com.zzjm.service.SomeService;
 import com.zzjm.service.impl.SomeServiceImpl;
 import org.junit.Test;
@@ -52,5 +53,14 @@ public class MyTest {
         //获取对象使用getBean();
         Date myDate=(Date) applicationContext.getBean("mydate");
         System.out.println("获取当前系统时间"+myDate);
+    }
+    @Test
+    public void text05(){
+        String config="ba01/applicationContext.xml";
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext(config);
+        //获取对象使用getBean();
+        Student mystudent=(Student) applicationContext.getBean("student");
+        System.out.println("student对象"+mystudent);
+        System.out.println();
     }
 }
