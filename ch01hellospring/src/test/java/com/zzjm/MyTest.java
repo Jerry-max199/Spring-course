@@ -61,6 +61,9 @@ public class MyTest {
         //获取对象使用getBean();
         Student mystudent=(Student) applicationContext.getBean("student");
         System.out.println("student对象"+mystudent);
-        System.out.println();
+        Date mydate=(Date)applicationContext.getBean("mydate");
+        System.out.println(mydate);
+
     }
+
 }
