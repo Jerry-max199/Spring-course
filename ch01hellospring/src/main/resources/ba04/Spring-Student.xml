@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <!--student模块所有对象bean的声明，student模块的文件配置-->
+    <bean id="mystudent" class="com.zzjm.ba04.Student" autowire="byType">
+        <property name="name" value="赵四"></property>
+        <property name="age"  value="50"/>
+    </bean>
+</beans>
